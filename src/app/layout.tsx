@@ -3,8 +3,9 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import "@mantine/core/styles.css";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
-import { Header } from "@/components/layout/Header";
+import { Header } from "@/components/layout/header/Header";
 import { Footer } from "@/components/layout/Footer";
+import { theme } from "@/mantine/theme";
 
 const popppins = Poppins({
   subsets: ["latin"],
@@ -29,7 +30,7 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body className={popppins.className}>
-        <MantineProvider>
+        <MantineProvider theme={theme} forceColorScheme="light">
           <main className="font-normal">
             <Header />
             {children}

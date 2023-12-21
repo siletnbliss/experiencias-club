@@ -1,6 +1,6 @@
 # Experiencias Club
 
-This is a next.js application for promoting and booking restaurants, built using Sanity.io, MantineUI, Tailwind and Stripe.
+This is a next.js application for promoting and booking restaurants, built using Sanity.io, MantineUI, Tailwind, Framer Motion and Stripe.
 
 ## Getting Started
 
