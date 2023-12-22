@@ -1,11 +1,9 @@
 "use client";
-import { Center, Divider, Group, Paper } from "@mantine/core";
+import { Center, Paper } from "@mantine/core";
 import Link from "next/link";
 import React from "react";
-import { IconUserPlus } from "@tabler/icons-react";
-import { SearchBar } from "./SearchBar";
+
 import { Logo } from "@/components/common/Logo";
-import { MyButton } from "@/components/common/Button";
 import Sidebar from "./Sidebar";
 import { NavList } from "./NavList";
 import { HeaderActions } from "./Actions";

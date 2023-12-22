@@ -31,9 +31,9 @@ export default function RootLayout({
       </head>
       <body className={popppins.className}>
         <MantineProvider theme={theme} forceColorScheme="light">
-          <main className="font-normal">
+          <main className="font-normal flex flex-col justify-between min-h-screen ">
             <Header />
-            {children}
+            <div className="px-5">{children}</div>
             <Footer />
           </main>
         </MantineProvider>
