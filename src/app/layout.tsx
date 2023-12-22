@@ -3,8 +3,6 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import "@mantine/core/styles.css";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
-import { Header } from "@/components/layout/header/Header";
-import { Footer } from "@/components/layout/Footer";
 import { theme } from "@/mantine/theme";
 
 const popppins = Poppins({
@@ -32,9 +30,7 @@ export default function RootLayout({
       <body className={popppins.className}>
         <MantineProvider theme={theme} forceColorScheme="light">
           <main className="font-normal flex flex-col justify-between min-h-screen ">
-            <Header />
-            <div className="px-5">{children}</div>
-            <Footer />
+            {children}
           </main>
         </MantineProvider>
       </body>
