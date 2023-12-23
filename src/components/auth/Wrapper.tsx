@@ -74,6 +74,7 @@ export function AuthWrapper({
               vectorClassname || ""
             }`}
             {...vectorRest}
+            quality={100}
             src={vector.src}
             alt="vector"
           />

@@ -1,5 +1,12 @@
 "use client";
-import { Button, MantineColorsTuple, createTheme } from "@mantine/core";
+import {
+  Button,
+  Input,
+  MantineColorsTuple,
+  Select,
+  TextInput,
+  createTheme,
+} from "@mantine/core";
 
 const primaryGreen: MantineColorsTuple = [
   "#f1fbe9",
@@ -69,6 +76,21 @@ export const theme = createTheme({
         variant: "filled",
         fw: "normal",
         px: "lg",
+      },
+    }),
+    Input: Input.extend({
+      defaultProps: {
+        size: "md",
+      },
+    }),
+    TextInput: TextInput.extend({
+      defaultProps: {
+        size: "md",
+      },
+    }),
+    Select: Select.extend({
+      defaultProps: {
+        size: "md",
       },
     }),
   },
