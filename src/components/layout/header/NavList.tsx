@@ -50,8 +50,8 @@ interface ItemProps {
 }
 
 const highlightStyle: CSSProperties = {
-  borderBottomWidth: 2,
   borderBottomColor: "var(--mantine-primary-color-filled)",
+  borderBottomWidth: 2,
 };
 
 export const HeaderItem = ({ route, selected }: ItemProps) => {
@@ -60,11 +60,15 @@ export const HeaderItem = ({ route, selected }: ItemProps) => {
       whileHover={{
         ...(!selected && {
           borderBottomColor: highlightStyle.borderBottomColor,
-          borderBottomWidth: highlightStyle.borderBottomWidth,
         }),
-        transition: { type: "tween", ease: "backOut" },
+        transition: { type: "tween", ease: "linear" },
       }}
-      style={{ paddingBottom: "0.25rem", ...(!!selected && highlightStyle) }}
+      style={{
+        paddingBottom: "0.25rem",
+        borderBottomWidth: 2,
+        borderBottomColor: "transparent",
+        ...(!!selected && highlightStyle),
+      }}
     >
       {"routes" in route ? (
         <Menu trigger="hover">

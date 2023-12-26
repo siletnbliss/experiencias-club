@@ -1,0 +1,4 @@
+.input:focus input,
+.input:focus-within input {
+  --_input-bd: "inherit ";
+}
