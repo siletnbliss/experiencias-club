@@ -1,6 +1,7 @@
 "use client";
 import {
   Button,
+  Card,
   Input,
   MantineColorsTuple,
   Select,
@@ -60,12 +61,26 @@ const darkBlue: MantineColorsTuple = [
   "#12579c",
 ];
 
+const secondGreen: MantineColorsTuple = [
+  "#ebfef5",
+  "#d6fde9",
+  "#a7fad0",
+  "#78f9b6",
+  "#54f79f",
+  "#42f691",
+  "#38f789",
+  "#2ddb76",
+  "#22c368",
+  "#05a857",
+];
+
 export const theme = createTheme({
   colors: {
     green: primaryGreen,
     red: red,
     yellow: yellow,
     darkBlue: darkBlue,
+    secondGreen,
   },
   primaryColor: "green",
   primaryShade: 6,
@@ -86,11 +101,18 @@ export const theme = createTheme({
     TextInput: TextInput.extend({
       defaultProps: {
         size: "md",
+        radius: "md",
       },
     }),
     Select: Select.extend({
       defaultProps: {
         size: "md",
+      },
+    }),
+    Card: Card.extend({
+      defaultProps: {
+        shadow: "none",
+        radius: "md",
       },
     }),
   },
