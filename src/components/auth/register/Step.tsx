@@ -1,5 +1,5 @@
 "use client";
-import { SimpleStep } from "@/components/common";
+import { SimpleStep } from "@/components/common/Step";
 import { MyButton } from "@/components/common/Button";
 import { SimpleStepper } from "@/components/common/Step/SimpleStep";
 import { useSteps } from "@/components/common/Step/useSteps";
