@@ -6,6 +6,7 @@ import {
   MantineColorsTuple,
   Select,
   TextInput,
+  Title,
   createTheme,
 } from "@mantine/core";
 
@@ -91,6 +92,7 @@ export const theme = createTheme({
         variant: "filled",
         fw: "normal",
         px: "lg",
+        radius: "10px",
       },
     }),
     Input: Input.extend({
@@ -112,7 +114,14 @@ export const theme = createTheme({
     Card: Card.extend({
       defaultProps: {
         shadow: "none",
-        radius: "md",
+        radius: "26px",
+      },
+    }),
+    Title: Title.extend({
+      styles: {
+        root: {
+          fontFamily: "inherit",
+        },
       },
     }),
   },

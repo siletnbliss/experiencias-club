@@ -2,6 +2,7 @@ import { Card, Container, Grid, GridCol, Text, Title } from "@mantine/core";
 import mailImg from "@/assets/landing/newsletter/mail.png";
 import Image from "next/image";
 import { NewsletterForm } from "./Form";
+import { Circle } from "@/components/common/Circle";
 
 export const NewsletterCard = () => {
   return (
@@ -17,6 +18,7 @@ export const NewsletterCard = () => {
         pl={{ base: "xl", md: "4rem" }}
         pr={{ base: "xl", md: "3rem" }}
         py="3.5rem"
+        radius={"31px"}
       >
         <Grid gutter={{ base: "1rem", md: "4rem" }} align="center">
           <GridCol span={{ base: 12, md: 5 }}>
@@ -34,6 +36,14 @@ export const NewsletterCard = () => {
           </GridCol>
         </Grid>
       </Card>
+      <Circle
+        size={"250px"}
+        pos={"absolute"}
+        className="-z-10"
+        right={"-60px"}
+        top={"80px"}
+        visibleFrom="md"
+      />
     </Container>
   );
 };
