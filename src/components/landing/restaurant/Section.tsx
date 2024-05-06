@@ -1,4 +1,4 @@
-import { Container, Grid, GridCol, Image, Title } from "@mantine/core";
+import { Box, Grid, GridCol, Image, Title } from "@mantine/core";
 import { RestaurantCard } from "./Card";
 import { RestaurantOffer } from "./Offer";
 import { RestaurantDiscount } from "./discount/Discount";
@@ -37,12 +37,8 @@ const BottomCircle = ({ xs = false }: { xs?: boolean }) => (
 
 export const ReastaurantSection = ({ restaurant, offer }: Props) => {
   return (
-    <Container
-      mb={CIRCLE_OFFSET}
-      className="flex flex-col items-center"
-      size={"xl"}
-    >
-      <Title maw={"720px"} fz={{ xs: "2rem", sm: "3rem" }} mb="xl" mx={"auto"}>
+    <Box mb={CIRCLE_OFFSET} className="flex flex-col items-center">
+      <Title maw={"600px"} fz={{ xs: "2rem", sm: "3rem" }} mb="xl" mx={"auto"}>
         Here's our top selection, today's hottest deal
       </Title>
       <Grid align="stretch" gutter={{ base: "lg", lg: "lg" }}>
@@ -75,6 +71,6 @@ export const ReastaurantSection = ({ restaurant, offer }: Props) => {
           <BottomCircle xs />
         </GridCol>
       </Grid>
-    </Container>
+    </Box>
   );
 };

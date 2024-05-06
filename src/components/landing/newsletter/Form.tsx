@@ -14,7 +14,7 @@ const FormButton = () => (
       <IconArrowRight />
     </ActionIcon>
     <Button visibleFrom="md" radius={"md"} color="secondGreen.9">
-      Suscribirse
+      Subscribe
     </Button>
   </>
 );
