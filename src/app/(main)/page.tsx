@@ -1,14 +1,16 @@
-import { Stack } from "@mantine/core";
-import { NewsletterCard } from "../../components/landing/newsletter/Card";
-import { ReastaurantSection } from "@/components/landing/restaurant/Section";
-import { LandingBanner } from "@/components/landing/banner/Banner";
+import { LandingBanner2 } from "@/components/landing/banner/Banner2";
 import { CustomLandingBanner } from "@/components/landing/banner/CustomBanner";
+import { ReastaurantSection } from "@/components/landing/restaurant/Section";
+import { Space, Stack } from "@mantine/core";
+import { NewsletterCard } from "../../components/landing/newsletter/Card";
+import { BenefitsList } from "@/components/landing/benefits/List";
 
 export default function Home() {
   return (
-    <Stack my="4rem" gap="xl">
+    <Stack my="4rem" gap="6rem">
+      <LandingBanner2 />
+      <BenefitsList />
       <CustomLandingBanner />
-      <LandingBanner />
       <ReastaurantSection
         restaurant={{
           title: "La Milanesa Restaurante",

@@ -1,0 +1,6 @@
+.green {
+  background: linear-gradient(180deg, #78b645 0%, rgba(120, 182, 69, 0) 100%);
+}
+.gray {
+  background: linear-gradient(180deg, #0a3158 0%, rgba(10, 49, 88, 0) 97.71%);
+}
