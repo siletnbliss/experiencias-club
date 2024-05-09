@@ -45,17 +45,21 @@ export const BenefitsList = () => {
         align="stretch"
         justify="center"
         className="relative"
-        gutter={{ base: "4rem", sm: "xl", md: "4rem" }}
+        gutter={{ base: "xs", sm: "xl", md: "4rem" }}
         w={"100%"}
       >
         <Circle size={"6rem"} className={`absolute -left-5 ${classes.green}`} />
         <Circle
           size={"6rem"}
-          className={`absolute -right-10 bottom-1/2 ${classes.gray}`}
+          className={`absolute -right-2 sm:-right-10 bottom-1/2 ${classes.gray}`}
         />
 
         {items.map((item, i) => (
-          <GridCol key={i} span={{ xs: 1, sm: 3 }}>
+          <GridCol
+            mb={{ base: "4rem", md: "xs" }}
+            key={i}
+            span={{ xs: 1, sm: 3 }}
+          >
             <BenefitCard title={item.title} img={item.img} />
           </GridCol>
         ))}

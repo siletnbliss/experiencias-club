@@ -4,12 +4,14 @@ import { ReastaurantSection } from "@/components/landing/restaurant/Section";
 import { Space, Stack } from "@mantine/core";
 import { NewsletterCard } from "../../components/landing/newsletter/Card";
 import { BenefitsList } from "@/components/landing/benefits/List";
+import { OfferSection } from "@/components/landing/offer/Section";
 
 export default function Home() {
   return (
     <Stack my="4rem" gap="6rem">
       <LandingBanner2 />
       <BenefitsList />
+      <OfferSection />
       <CustomLandingBanner />
       <ReastaurantSection
         restaurant={{

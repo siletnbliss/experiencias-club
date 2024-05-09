@@ -14,7 +14,7 @@ const Offer = () => {
         opened
         w={"14rem"}
         position="bottom"
-        offset={-5}
+        offset={15}
         arrowSize={15}
         classNames={{ tooltip: classes.tooltip }}
         arrowRadius={5}

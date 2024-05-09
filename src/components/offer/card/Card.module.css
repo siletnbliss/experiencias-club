@@ -1,0 +1,24 @@
+.discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 10px;
+  width: 120px;
+  height: 50px;
+  z-index: 20;
+  background: linear-gradient(90deg, #fa696f 0.85%, #fb9f82 98.31%);
+}
+
+.discount-tip {
+  position: absolute;
+  height: 50px;
+  width: 30px;
+  transform: rotate(-90deg);
+  border-left: 26px solid #fb9f82;
+  border-right: 25px solid #fb9f82;
+  border-bottom: 15px solid transparent;
+  border-radius: 8px;
+  top: 10px;
+  left: 95px;
+  z-index: 10;
+}
