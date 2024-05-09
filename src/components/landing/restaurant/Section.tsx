@@ -39,7 +39,7 @@ export const ReastaurantSection = ({ restaurant, offer }: Props) => {
   return (
     <Box mb={CIRCLE_OFFSET} className="flex flex-col items-center">
       <Title maw={"600px"} fz={{ xs: "2rem", sm: "3rem" }} mb="xl" mx={"auto"}>
-        Here's our top selection, today's hottest deal
+        Here&apos;s our top selection, today&apos;s hottest deal
       </Title>
       <Grid align="stretch" gutter={{ base: "lg", lg: "lg" }}>
         <GridCol span={{ xs: 12, md: 8 }}>
