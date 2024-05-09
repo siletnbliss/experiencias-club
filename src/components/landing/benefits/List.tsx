@@ -1,9 +1,9 @@
 import { Box, Grid, GridCol, Title } from "@mantine/core";
 
-import serveImg from "@/../public/landing/benefits/serve.png";
-import giftImg from "@/../public/landing/benefits/present.png";
-import movieImg from "@/../public/landing/benefits/movies.png";
-import discountImg from "@/../public/landing/benefits/discount.png";
+import serveImg from "@/assets/landing/benefits/serve.png";
+import giftImg from "@/assets/landing/benefits/present.png";
+import movieImg from "@/assets/landing/benefits/movies.png";
+import discountImg from "@/assets/landing/benefits/discount.png";
 
 import classes from "./List.module.css";
 

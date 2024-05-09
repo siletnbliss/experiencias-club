@@ -1,7 +1,7 @@
 import { Box, Text, Tooltip } from "@mantine/core";
 import classes from "./CustomBanner.module.css";
 
-import burgerImg from "@/../public/landing/burger-3d.webp";
+import burgerImg from "@/assets/landing/burger-3d.webp";
 import Image from "next/image";
 
 const Offer = () => {
@@ -14,7 +14,7 @@ const Offer = () => {
         opened
         w={"14rem"}
         position="bottom"
-        offset={15}
+        offset={5}
         arrowSize={15}
         classNames={{ tooltip: classes.tooltip }}
         arrowRadius={5}

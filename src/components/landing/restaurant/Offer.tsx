@@ -1,9 +1,9 @@
 import { Button, Card, Group, Stack, Text, Title } from "@mantine/core";
 import { IconBolt } from "@tabler/icons-react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface Props {
-  img: string;
+  img: string | StaticImageData;
   title: string;
   price: number;
   background?: string;

@@ -1,4 +1,4 @@
-import bannerImg from "@/../public/landing/banner-burgers.png";
+import bannerImg from "@/assets/landing/banner-burgers.png";
 import Image from "next/image";
 
 export const LandingBanner = () => {

@@ -1,4 +1,4 @@
-import bannerImg from "@/../public/landing/banner-ramen.png";
+import bannerImg from "@/assets/landing/banner-ramen.png";
 import Image from "next/image";
 
 export const LandingBanner2 = () => {
