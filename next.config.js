@@ -27,6 +27,8 @@ module.exports = {
 
     return config;
   },
-
+  experimental: {
+    optimizePackageImports: ["@mantine/core", "@mantine/hooks"],
+  },
   // ...other config
 };
