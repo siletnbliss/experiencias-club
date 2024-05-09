@@ -37,7 +37,10 @@ const BottomCircle = ({ xs = false }: { xs?: boolean }) => (
 
 export const ReastaurantSection = ({ restaurant, offer }: Props) => {
   return (
-    <Box mb={CIRCLE_OFFSET} className="flex flex-col items-center">
+    <Box
+      mb={{ base: "4rem", sm: CIRCLE_OFFSET }}
+      className="flex flex-col items-center"
+    >
       <Title maw={"600px"} fz={{ xs: "2rem", sm: "3rem" }} mb="xl" mx={"auto"}>
         Here&apos;s our top selection, today&apos;s hottest deal
       </Title>

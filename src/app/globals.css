@@ -6,16 +6,17 @@
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;
 }
-/*
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-rgb: 0, 0, 0;
-  }
-}
-*/
+
 body {
   color: rgb(var(--foreground-rgb));
   background: var(--background-rgb);
   box-sizing: border-box;
+}
+
+.landing-container {
+  gap: 6rem !important;
+
+  @media (max-width: 48em) {
+    gap: 4rem !important;
+  }
 }
