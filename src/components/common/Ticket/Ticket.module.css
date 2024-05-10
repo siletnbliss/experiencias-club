@@ -1,5 +1,4 @@
-.discount {
-  position: absolute;
+.ticket {
   top: 10px;
   left: 10px;
   border-radius: 10px;
@@ -9,8 +8,7 @@
   background: linear-gradient(90deg, #fa696f 0.85%, #fb9f82 98.31%);
 }
 
-.discount-tip {
-  position: absolute;
+.ticket-tip {
   height: 50px;
   width: 30px;
   transform: rotate(-90deg);

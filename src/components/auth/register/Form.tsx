@@ -36,7 +36,7 @@ export function RegisterForm() {
             placeholder="ID Number"
           />{" "}
         </Group>
-        <DatePickerInput label="Birth date" size="md" />
+        <DatePickerInput placeholder="Birth date" size="md" />
         <TextInput placeholder="Residence State" />
         {/*TODO:  use react-imask to format phone */}
         <TextInput placeholder="Phone Number" />

@@ -1,10 +1,9 @@
+import { Ticket } from "@/components/common/Ticket/Ticket";
 import { Offer } from "@/models/offer";
 import { Box, Button, Card, Group, Text, Title } from "@mantine/core";
 import { IconMapPin } from "@tabler/icons-react";
 import Image from "next/image";
 import { useMemo } from "react";
-
-import classes from "./Card.module.css";
 
 interface Props {
   offer: Offer;
@@ -19,18 +18,7 @@ export const OfferCard = ({ offer }: Props) => {
 
   return (
     <Card pos={"relative"} p={0} radius={"10px"} withBorder>
-      <Box
-        fz={"xl"}
-        fw={700}
-        c="white"
-        py={"xs"}
-        px={"sm"}
-        pr={"lg"}
-        className={classes.discount}
-      >
-        {offer.discount}% OFF
-      </Box>
-      <Box className={classes["discount-tip"]} />
+      <Ticket>{offer.discount}% OFF</Ticket>
 
       <Box h={"15rem"} className="rounded-xl">
         <Image

@@ -43,12 +43,12 @@ export function SimpleStepper({
         await animate(scope.current, { opacity: 0, x: -50 }, {});
         await animate(scope.current, { opacity: 0, x: 80 }, {});
       }
-      animate(scope.current, { opacity: 1, x: 0 }, {});
+      await animate(scope.current, { opacity: 1, x: 0 }, {});
     })();
   }, [active, animate, scope, prevActive]);
 
   return (
-    <div ref={scope} {...rest}>
+    <div style={{ opacity: 0 }} ref={scope} {...rest}>
       {stepContent}
     </div>
   );
